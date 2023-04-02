@@ -31,4 +31,5 @@ Route::get('posts/{post}', function($slug) {
     return view('post', [ 
         'post' => $post
     ]);
-});
+     
+})->whereIsRouteForm('post');
